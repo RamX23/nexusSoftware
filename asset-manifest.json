@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nexusSoftware/static/css/main.9bbd4a24.css",
-    "main.js": "/nexusSoftware/static/js/main.d698c44e.js",
+    "main.js": "/nexusSoftware/static/js/main.fe785647.js",
     "static/js/592.5a9a7136.chunk.js": "/nexusSoftware/static/js/592.5a9a7136.chunk.js",
     "index.html": "/nexusSoftware/index.html",
     "main.9bbd4a24.css.map": "/nexusSoftware/static/css/main.9bbd4a24.css.map",
-    "main.d698c44e.js.map": "/nexusSoftware/static/js/main.d698c44e.js.map",
+    "main.fe785647.js.map": "/nexusSoftware/static/js/main.fe785647.js.map",
     "592.5a9a7136.chunk.js.map": "/nexusSoftware/static/js/592.5a9a7136.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bbd4a24.css",
-    "static/js/main.d698c44e.js"
+    "static/js/main.fe785647.js"
   ]
 }
