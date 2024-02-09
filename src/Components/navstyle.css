@@ -29,16 +29,16 @@
     text-decoration: none;
     font-size: 20px;
 } 
-ul li a:hover{
+ul a:hover{
   color: beige;
 }
-ul li{
+a li{
     display: inline-block;
 
     padding:    5px 20px;
     cursor: pointer;
 }
-ul li a{
+ul a{
     text-decoration: none;
     color: aliceblue;
 }
@@ -55,7 +55,7 @@ ul li a{
         display: block;
         position: absolute;
         background-color: rgb(30, 26, 26);
-        top: 60px;
+        top: 50px;
         width: 100%;
         text-align: center;
         right: 0;
@@ -65,15 +65,29 @@ ul li a{
     }
     .bar{
         display: block;
+        position: absolute;
+        right: 30px;
+        color: aliceblue;
+        font-size: 20px;
+        text-decoration: none;
     }
-    ul li{
+    a li{
         display: block;
         width: 100%;
+        border: 2px solid black;
+
     }
     h3{
         font-size: 18px;
         padding: 5px;
     }
-
+  .heroimage{
+    position: relative;
+    right: 2rem;
+  }
+   a li:hover{
+    border: 2px solid white;
+    background-color: gray;
+   }
 
 }
