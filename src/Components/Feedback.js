@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 function Feedback() {
  
   const [data,setdata]=useState({
-    name:"",
-    surname:"",
     email:"",
     feedback:"",
   }
@@ -20,8 +18,8 @@ function Feedback() {
   const handlesubmit=async(e)=>{
      e.preventDefault();  
 
-     const {name,surname,email,feedback}= data;
-     if(name&&surname&&email&&feedback){
+     const {email,feedback}= data;
+     if(email&&feedback){
 
        const res = await fetch("https://feedback-2c098-default-rtdb.firebaseio.com/feedbackform.json",
        {
@@ -36,8 +34,6 @@ function Feedback() {
        );
        if(res){
      setdata({
-         name:"",
-         surname:"",
          email:"",
          feedback:"",
        })
@@ -63,22 +59,7 @@ function Feedback() {
       <div>
         <form className="needs-validation" method="POST">
           <div className="row g-3">
-            <div className="col-sm-6">
-              <label htmlFor="firstName" className="form-label">First name</label>
-              <input type="text" className="form-control" id="firstName" placeholder="Name" required="/" onChange={handlechange} name='name' value={data.name}/>
-              <div className="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <label htmlFor="firstName" className="form-label">Last name</label>
-              <input type="text" className="form-control" id="LastName" placeholder="Name" required="/" onChange={handlechange} name='surname' value={data.surname}/>
-              <div className="invalid-feedback">
-                Valid Last name is required.
-              </div>
-            </div>
-
- 
+         
 
             <div className="col-12">
               <label htmlFor="email" className="form-label">Email <span className="text-body-secondary"></span></label>
